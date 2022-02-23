@@ -34,12 +34,12 @@ Here is a preview of the website provide: ![Password Generator]()
 
 ## Link
 
-A link to the [code](https://github.com/jgarcia45/password-generator)
+A link to the [code](https://github.com/jgarcia45/password-generator):
 ```
 https://github.com/jgarcia45/password-generator
 ```
 
-A link to the deployed [URL](https://jgarcia45.github.io/password-generator/)
+A link to the deployed [URL](https://jgarcia45.github.io/password-generator/):
 ```
 https://jgarcia45.github.io/password-generator/
 ```
