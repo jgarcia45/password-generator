@@ -26,14 +26,39 @@ function generatePassword() {
   var specialcaseConfirmation = window.confirm("Would you like special characters in the password?");
 
   //Validates and ensures that one character type should be selected
+  //If all 4 choices are chosen
   if (!lowercaseConfirmation && !uppercaseConfirmation && !numericalcaseConfirmation && !specialcaseConfirmation) {
     window.alert("Must choose a Character Type!");
   } else if (lowercaseConfirmation && uppercaseConfirmation && numericalcaseConfirmation && specialcaseConfirmation) {
     casesChosen = lowerCase + upperCase + numberCase + specialCharacters;
-  } else if (lowercaseConfirmation && uppercaseConfirmation && numericalcaseConfirmation) {
+  } else if (lowercaseConfirmation && uppercaseConfirmation && numericalcaseConfirmation) { //Only 3 of the choices are chosen
     casesChosen = lowerCase + upperCase + numberCase;
-  } else {
+  } else if (lowercaseConfirmation && uppercaseConfirmation && specialcaseConfirmation) {
+    casesChosen = lowerCase + upperCase + specialCharacters;
+  } else if (lowercaseConfirmation && numericalcaseConfirmation && specialcaseConfirmation) {
+    casesChosen = lowerCase + numberCase + specialCharacters;
+  } else if (uppercaseConfirmation && numericalcaseConfirmation && specialcaseConfirmation) {
+    casesChosen = upperCase + numberCase + specialCharacters;
+  } else if (lowercaseConfirmation && uppercaseConfirmation) { //Only 2 of the choices are chosen
+    casesChosen = lowerCase + upperCase;
+  } else if (lowercaseConfirmation && numericalcaseConfirmation) {
+    casesChosen = lowerCase + numberCase;
+  } else if (lowercaseConfirmation && specialcaseConfirmation) {
+    casesChosen = lowerCase + specialCharacters;
+  } else if (uppercaseConfirmation && numericalcaseConfirmation) {
+    casesChosen = upperCase + numberCase;
+  } else if (uppercaseConfirmation && specialcaseConfirmation) {
+    casesChosen = upperCase + specialCharacters;
+  } else if (numericalcaseConfirmation && specialcaseConfirmation) {
+    casesChosen = numberCase + specialCharacters;
+  } else if (lowercaseConfirmation) { //Only 1 of the choices are chosen
     casesChosen = lowerCase;
+  } else if (uppercaseConfirmation) {
+    casesChosen = upperCase;
+  } else if (numericalcaseConfirmation) {
+    casesChosen = numberCase;
+  } else {
+    casesChosen = specialCharacters;
   }
 
   //Random Pasword
