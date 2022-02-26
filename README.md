@@ -1,7 +1,7 @@
 # JavaScript Challenge: Password Generator
 
 ## Description
-Our challenge tasks is to create an application where a user can generate a random password with the criteria they selected. 
+Our challenge tasks is to create an application where a user can generate a random password with the criteria they selected. The application runs in the browser and features dynamically updated HTML and CSS. The backend of the application is powered by JavaScript code that was written by me.
 
 ## User Story
 
@@ -31,8 +31,8 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 ## Screenshot
-Here is a preview of the website provide: ![Password Generator Start](./before.png)
-Here is a preview of the website provide: ![Password Generator End](./after.png)
+Here is a preview of the website before the application starts: ![Password Generator Start](./assets/images/before.png)
+Here is a preview of the website after the application ends: ![Password Generator End](./assets/images/after.png)
 
 ## Link
 
