@@ -1,6 +1,7 @@
 # JavaScript Challenge: Password Generator
 
 ## Description
+Our challenge tasks is to create an application where a user can generate a random password with the criteria they selected. 
 
 ## User Story
 
@@ -30,7 +31,8 @@ THEN the password is either displayed in an alert or written to the page
 ```
 
 ## Screenshot
-Here is a preview of the website provide: ![Password Generator]()
+Here is a preview of the website provide: ![Password Generator Start](./before.png)
+Here is a preview of the website provide: ![Password Generator End](./after.png)
 
 ## Link
 
